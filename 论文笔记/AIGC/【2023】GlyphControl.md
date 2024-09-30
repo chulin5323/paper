@@ -19,7 +19,7 @@
 
 ### 模型结构
 
-![](D:\learning\论文\论文笔记\AIGC\GlyphControl.png)
+![](..\..\论文笔记\AIGC\fig\GlyphControl.png)
 
 #### OCR engine
 

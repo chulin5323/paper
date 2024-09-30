@@ -22,7 +22,7 @@
 
 ### Diff-Font模型框架
 
-![](D:\learning\论文\论文笔记\AIGC\Diff-Font_1.png)
+![](..\..\论文笔记\AIGC\fig\Diff-Font_1.png)
 
 - Diffusion Model负责进行文字生成
 - Character attributes encoder负责添加控制信息：内容、风格、笔划
@@ -39,7 +39,7 @@
 
 - 将每个字符的笔划信息编码为一个**32维的向量**，向量的每个维度表示**该字符中基本比划的数量**
 
-![](D:\learning\论文\论文笔记\AIGC\Diff-Font_2.png)
+![](..\..\论文笔记\AIGC\fig\Diff-Font_2.png)
 
 #### 三、contents
 
@@ -47,4 +47,4 @@
 
 ## 结果
 
-![](D:\learning\论文\论文笔记\AIGC\Diff-Font_3.png)
+![](..\..\论文笔记\AIGC\fig\Diff-Font_3.png)

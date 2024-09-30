@@ -15,7 +15,7 @@
 
 ## 方法
 
-![](D:\learning\paper\论文笔记\AIGC\fig\DiTs_1.png)
+![](..\..\论文笔记\AIGC\fig\DiTs_1.png)
 
 > CFG（Classifier-free guidance）：Classifier-free guidance是扩散模型中的一种方法，旨在实现更好的生成效果，同时避免引入额外的分类器。
 >
@@ -29,7 +29,7 @@
 
 #### Patchify
 
-<img src="D:\learning\paper\论文笔记\AIGC\fig\DiTs_2.png" style="zoom:80%;" />
+<img src="..\..\论文笔记\AIGC\fig\DiTs_2.png" style="zoom:80%;" />
 
 - DiTs的输入是一个空间表征$z$，对于$256\times 256\times 3$而言的图片，$z$的大小为$32\times 32 \times 4$
 - 在patchify之后，对patch token使用了ViT中基于频率的位置embedding（sine-cosine）
@@ -37,7 +37,7 @@
 
 #### DiT block design
 
-<img src="D:\learning\paper\论文笔记\AIGC\fig\DiTs_3.png" style="zoom:80%;" />
+<img src="..\..\论文笔记\AIGC\fig\DiTs_3.png" style="zoom:80%;" />
 
 探究了四种可以**直接处理条件输入**的Transformer块的变体
 
@@ -66,8 +66,8 @@
 
 scaling DiT模型在训练阶段可以提升性能
 
-![](D:\learning\paper\论文笔记\AIGC\fig\DiTs_4.png)
+![](..\..\论文笔记\AIGC\fig\DiTs_4.png)
 
 Transformer的Gflops和FID存在强相关性
 
-<img src="D:\learning\paper\论文笔记\AIGC\fig\DiTs_5.png" style="zoom:67%;" />
+<img src="..\..\论文笔记\AIGC\fig\DiTs_5.png" style="zoom:67%;" />

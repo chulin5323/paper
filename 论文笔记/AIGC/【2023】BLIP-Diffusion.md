@@ -27,7 +27,7 @@
 
 通过递进式的去除来自高斯分布的随机变量来生成图片，本文关注潜在扩散模型（latent diffusion model），该模型的优化目标：
 
-![](D:\learning\论文\论文笔记\AIGC\BlipDiffusion_1.png)
+![](..\..\论文笔记\AIGC\fig\BlipDiffusion_1.png)
 
 $\epsilon$为添加的噪声，$\epsilon_{\theta}$为模型预测的噪声，$c$为文本prompt（condition），在训练过程中，潜变量$z$是通过将原始图片通过预训练的编码器（如VAE）得到的。
 
@@ -41,7 +41,7 @@ $\epsilon$为添加的噪声，$\epsilon_{\theta}$为模型预测的噪声，$c$
 
 ## 四、方法
 
-![](D:\learning\论文\论文笔记\AIGC\BlipDiffusion_2.png)
+![](..\..\论文笔记\AIGC\fig\BlipDiffusion_2.png)
 
 Blip-Diffusion首先使用Blip2编码器提取多模态主体表征，随后与文本prompts一起用于指导图片生成。
 
@@ -85,4 +85,4 @@ Blip-Diffusion的目标是学习主体表征，该表征能捕获特定主体的
 
 #### 4.2.3 与Control Net和prompt-to-prompt结合
 
-![](D:\learning\论文\论文笔记\AIGC\BlipDiffusion_3.png)
+![](..\..\论文笔记\AIGC\fig\BlipDiffusion_3.png)
