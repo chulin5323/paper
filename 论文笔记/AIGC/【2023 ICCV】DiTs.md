@@ -1,6 +1,6 @@
 # 【2023 ICCV】Scalable Diffusion Models with Transformers
 
-[arxiv](https://arxiv.org/pdf/2212.09748.pdf) [PDF](..\..\AIGC\文字生成图片\【2023 ICCV】DiTs.pdf) [code](https://github.com/facebookresearch/DiT) 
+[arxiv](https://arxiv.org/pdf/2212.09748.pdf) [PDF](..\..\AIGC\文生图\【2023 ICCV】DiTs.pdf) [code](https://github.com/facebookresearch/DiT) 
 
 > Transformer在扩散模型上的应用，使用Transformer替换了扩散模型中的骨干网络U-Net。并通过Gflops分析了Diffusion Transformers（DiTs）的可扩展性，研究发现，通过增加Transformer的深度\宽度，或者增加输入token的数量，模型所生成的图像会有较低的FID。
 
