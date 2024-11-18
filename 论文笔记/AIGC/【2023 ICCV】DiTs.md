@@ -49,12 +49,17 @@
 
     此外，没有直接学习$\gamma$和$\beta$​，而是**通过t和c的求和来对它们进行回归**
 
-    > Rather than directly learn dimensionwise scale and shift parameters  and , we regress
-    > them from the sum of the embedding vectors of $t$ and $c$.
+    > Rather than directly learn dimension wise scale and shift parameters $\gamma$ and $\beta$, we regress them from the sum of the embedding vectors of $t$ and $c$.
 
 4. 除了对$\gamma$和$\beta$进行回归，还对维度缩放参数$\alpha$进行回归，该元素应用在DiTs块中每一个残差连接前
 
     > In addition to regressing $\gamma$ and $\beta$, we also regress dimensionwise scaling parameters $\alpha$ that are applied immediately prior to any residual connections within the DiT block.
+
+5. **adaLN-Zero Block**
+
+    > 有工作发现在有监督学习中，对每个 Block 的第一个 Batch Norm 操作的缩放因子进行 Zero-Initialization 可以加速其大规模训练。基于 U-Net 的扩散模型使用类似的初始化策略，对每个 Block 的第一个卷积进行 Zero-Initialization。
+    >
+    > 论文中初始化 MLP 使其输出的缩放系数$\alpha$全部为0，这样一来，DiT Block 就初始化为了**Identity Function**。
 
 #### Transformer decoder
 
